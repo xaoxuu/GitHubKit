@@ -16,6 +16,8 @@
 		CD8119211F67C369008CD0E2 /* GitHubKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8119111F67C369008CD0E2 /* GitHubKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8119241F67C369008CD0E2 /* GitHubKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD81190F1F67C369008CD0E2 /* GitHubKit.framework */; };
 		CD8119251F67C369008CD0E2 /* GitHubKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD81190F1F67C369008CD0E2 /* GitHubKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDB742B41F67C54A005C6CDC /* GHModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB742B21F67C54A005C6CDC /* GHModel.h */; };
+		CDB742B51F67C54A005C6CDC /* GHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB742B31F67C54A005C6CDC /* GHModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		CD8119121F67C369008CD0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD81191E1F67C369008CD0E2 /* GitHubKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubKitTests.m; sourceTree = "<group>"; };
 		CD8119201F67C369008CD0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB742B21F67C54A005C6CDC /* GHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHModel.h; sourceTree = "<group>"; };
+		CDB742B31F67C54A005C6CDC /* GHModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +90,10 @@
 		CD8118CB1F67C33B008CD0E2 = {
 			isa = PBXGroup;
 			children = (
+				CD8119101F67C369008CD0E2 /* GitHubKit */,
 				CD8118D61F67C33B008CD0E2 /* GitHubKitDemo */,
 				CD8118F01F67C33B008CD0E2 /* GitHubKitDemoTests */,
 				CD8118FB1F67C33B008CD0E2 /* GitHubKitDemoUITests */,
-				CD8119101F67C369008CD0E2 /* GitHubKit */,
 				CD81191D1F67C369008CD0E2 /* GitHubKitTests */,
 				CD8118D51F67C33B008CD0E2 /* Products */,
 			);
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				CD8119111F67C369008CD0E2 /* GitHubKit.h */,
+				CDB742B21F67C54A005C6CDC /* GHModel.h */,
+				CDB742B31F67C54A005C6CDC /* GHModel.m */,
 				CD8119121F67C369008CD0E2 /* Info.plist */,
 			);
 			path = GitHubKit;
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8119211F67C369008CD0E2 /* GitHubKit.h in Headers */,
+				CDB742B41F67C54A005C6CDC /* GHModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +228,7 @@
 		CD8118CC1F67C33B008CD0E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GH;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = xaoxuu;
 				TargetAttributes = {
@@ -290,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB742B51F67C54A005C6CDC /* GHModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +511,7 @@
 				CD8119031F67C33B008CD0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8119261F67C369008CD0E2 /* Build configuration list for PBXNativeTarget "GitHubKit" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +520,7 @@
 				CD8119281F67C369008CD0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
